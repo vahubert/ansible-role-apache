@@ -45,3 +45,4 @@
     name: "{{ apache_service }}"
     state: "{{ apache_state }}"
     enabled: true
+    use: service
