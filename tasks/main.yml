@@ -41,7 +41,7 @@
   include_tasks: "configure-{{ ansible_os_family }}.yml"
 
 - name: Check services
-  raw: ls /etc/init.d
+  command: ls /etc/init.d
 
 - name: Ensure Apache has selected state and enabled on boot.
   service:
